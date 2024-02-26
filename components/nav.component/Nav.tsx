@@ -1,10 +1,13 @@
+
+
 export default function Nav() {
+
     return (
       <div>
         <nav className="bg-neutral border-gray-200 dark:bg-gray-900 text-neutral-content" >
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-              href="#"
+              href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
@@ -39,12 +42,13 @@ export default function Nav() {
                 />
               </svg>
             </button>
+      
             <div className="hidden w-full md:block md:w-auto" id="navbar-default" >
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-neutral">
+              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 px-3 text-neutral-content bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                    href="/protected/meme"
+                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     aria-current="page"
                   >
                     Home
@@ -52,34 +56,26 @@ export default function Nav() {
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/protected/profile"
+                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    About
+                    Profile
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/login"
+                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Services
+                    Login
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/register"
+                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-neutral-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Contact
+                    Register
                   </a>
                 </li>
               </ul>
@@ -89,4 +85,3 @@ export default function Nav() {
       </div>
     );
   }
-  
